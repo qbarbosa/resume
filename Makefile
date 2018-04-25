@@ -1,4 +1,6 @@
-resume.pdf: resume.tex
+all: resume.pdf resume.png
+
+resume.pdf: resume.tex awesome-cv.cls fontawesome.sty resume/* fonts/*
 	xelatex resume.tex
 
 resume.png: resume.pdf
