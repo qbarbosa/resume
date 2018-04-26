@@ -1,10 +1,16 @@
-all: resume.pdf resume.png
+all: Quentin_Barbosa_CV_EN.pdf Quentin_Barbosa_CV_EN.png Quentin_Barbosa_CV_FR.pdf Quentin_Barbosa_CV_FR.png
 
-resume.pdf: resume.tex awesome-cv.cls fontawesome.sty resume/* fonts/*
-	xelatex resume.tex
+Quentin_Barbosa_CV_EN.pdf: Quentin_Barbosa_CV_EN.tex awesome-cv.cls fontawesome.sty resume/*_en.tex fonts/*
+	xelatex Quentin_Barbosa_CV_EN.tex
 
-resume.png: resume.pdf
-	convert resume.pdf resume.png
+Quentin_Barbosa_CV_FR.pdf: Quentin_Barbosa_CV_FR.tex awesome-cv.cls fontawesome.sty resume/*_fr.tex fonts/*
+	xelatex Quentin_Barbosa_CV_FR.tex
+
+Quentin_Barbosa_CV_EN.png: Quentin_Barbosa_CV_EN.pdf
+	convert Quentin_Barbosa_CV_EN.pdf Quentin_Barbosa_CV_EN.png
+
+Quentin_Barbosa_CV_FR.png: Quentin_Barbosa_CV_FR.pdf
+	convert Quentin_Barbosa_CV_FR.pdf Quentin_Barbosa_CV_FR.png
 
 clean:
-	rm -f resume.pdf resume*.png
+	rm -f Quentin_Barbosa_CV_EN.pdf Quentin_Barbosa_CV_EN*.png Quentin_Barbosa_CV_FR.pdf Quentin_Barbosa_CV_FR*.png
