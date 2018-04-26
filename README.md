@@ -6,4 +6,4 @@ It is based on the [Awesome-CV](https://github.com/posquit0/Awesome-CV) template
 
 I publish it under the same license : CC-BY-SA-4.0. Please consult [LICENSE.md](./LICENSE.md) for more details.
 
-[![Résumé](./resume.png)](./resume.pdf)
+[![Résumé](./Quentin_Barbosa_CV_EN.png)](./Quentin_Barbosa_CV_EN.pdf)
