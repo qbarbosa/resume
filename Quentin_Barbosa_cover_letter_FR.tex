@@ -1,0 +1,115 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[11pt, a4paper]{awesome-cv}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{cv/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-nephritis}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     3rd party packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Used for French date formatting
+\usepackage[french]{babel}
+\usepackage{datetime}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+\name{Quentin}{Barbosa}
+\address{5 Rue Germain Pilon, 75018 Paris, France}
+\mobile{(+33)6-21-00-14-68}
+%%% Social
+\email{quentin.barbosa@protonmail.com}
+\homepage{www.entropie.is}
+\github{qbarbosa}
+\linkedin{quentin-barbosa}
+%%% Optionals
+\position{Développeur backend{\enskip\cdotp\enskip}5 ans d'expérience}
+%\quote{``Dev for good, making the web a better place."}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Letter Data (Cover Letter)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\recipient
+  {À l'attention du Dr. Lamarche-Perrin}
+  {LIP6, Équipe Complex Networks\\Sorbonne Université / CNRS\\4 place Jussieu, 75005 Paris}
+\letterdate{le \dateFRformat\today}
+\lettertitle{Candidature au poste d'ingénieur de recherche}
+\letteropening{Monsieur,}
+\letterclosing{Veuillez agréer, Monsieur, l'expression de mes meilleures salutations.}
+\letterenclosure[Pièce jointe]{Curriculum Vitae}
+\newdateformat{dateFRformat}{\THEDAY~\monthname~\THEYEAR}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+\makecvfooter
+  {}
+  {Quentin Barbosa~~~·~~~Lettre de motivation}
+  {}
+
+\begin{document}
+%%% Make a header for CV using personal data
+\makecvheader
+
+%%% Make a title for Cover Letter using letter data
+\makelettertitle
+
+%%% Write content for your cover letter
+\begin{cvletter}
+Après avoir débuté ma carrière dans le privé, je cherche désormais à mettre mes compétences au service de l'intérêt général. Travailler pour la recherche serait donc pour moi une belle opportunité, et c'est à ce titre que je me permets de vous adresser ma candidature en réponse à l'offre de mission "Conception d'une librairie pour l'analyse de réseaux dynamiques".
+
+Comme indiqué dans la description du poste, les travaux menés par les chercheurs du Laboratoire d'Informatique de Paris 6 ont donné lieu à l'écriture de nombreux outils ayant besoin d'uniformisation et d'intégration au sein d'une même librairie. Cette mission nécessitera une étape importante de recueil des besoins de l'utilisateur et c'est une dimension de mon métier qui m'a toujours passionné. De plus, l'idée d'exercer cette compétence au contact de chercheurs m'enthousiasme grandement.
+
+Par ailleurs, lors de mon dernier poste chez Sikana, j'ai pu travailler sur un projet international, collaborer avec des développeurs étrangers et contribuer à différents projets open-source. Vos besoins de rédaction de documentation technique en anglais me permettraient de mettre cette expérience à profit.
+
+Dans l'attente d'une réponse de votre part, je reste à votre disposition pour une éventuelle rencontre.
+\end{cvletter}
+
+%%% Make a closing for Cover Letter using letter data
+\makeletterclosing
+
+\end{document}
