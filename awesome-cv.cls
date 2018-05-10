@@ -646,7 +646,7 @@
   \end{singlespace}
   \ifthenelse{\isundefined{\@lettertitle}}
     {}
-    {\lettertitlestyle{\@lettertitle} \\}
+    {\lettertitlestyle{\@lettertitle} \\\\}
   \lettertextstyle{\@letteropening}
 }
 
@@ -655,7 +655,7 @@
 \newcommand*{\makeletterclosing}{
   \vspace{3.4mm}
   \lettertextstyle{\@letterclosing} \\\\
-  \letternamestyle{\@firstname \@lastname}
+  \letternamestyle{\@firstname~\@lastname}
   \ifthenelse{\isundefined{\@letterenclosure}}
     {\\}
     {
