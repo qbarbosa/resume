@@ -24,6 +24,6 @@ $(COV_LETTER_FR).png: $(COV_LETTER_FR).pdf
 	convert -density 200 -background white -alpha remove $(COV_LETTER_FR).pdf $(COV_LETTER_FR).png
 
 clean:
-	rm -f $(CV_EN).pdf $(CV_EN).png $(CV_FR).pdf $(CV_FR).png $(COV_LETTER_FR).pdf $(COV_LETTER_FR).png *.log *.aux *.dvi *.out
+	rm -f $(CV_EN).pdf $(CV_EN)*.png $(CV_FR).pdf $(CV_FR)*.png $(COV_LETTER_FR).pdf $(COV_LETTER_FR)*.png *.log *.aux *.dvi *.out
 
 .PHONY: all clean
