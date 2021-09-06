@@ -2,3 +2,4 @@
 *.aux
 *.out
 *.dvi
+.DS_Store
