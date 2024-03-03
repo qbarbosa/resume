@@ -11,14 +11,14 @@ $(CV_EN).pdf: $(CV_EN).tex awesome-cv.cls fontawesome.sty resume/*_en.tex fonts/
 $(CV_FR).pdf: $(CV_FR).tex awesome-cv.cls fontawesome.sty resume/*_fr.tex fonts/*
 	xelatex $(CV_FR).tex
 
-$(COV_LETTER_FR).pdf: $(COV_LETTER_FR).tex awesome-cv.cls fontawesome.sty resume/*_en.tex fonts/*
-	xelatex $(COV_LETTER_FR).tex
-
 $(CV_EN).png: $(CV_EN).pdf
 	convert -density 200 -background white -alpha remove $(CV_EN).pdf $(CV_EN).png
 
 $(CV_FR).png: $(CV_FR).pdf
 	convert -density 200 -background white -alpha remove $(CV_FR).pdf $(CV_FR).png
+
+$(COV_LETTER_FR).pdf: $(COV_LETTER_FR).tex awesome-cv.cls fontawesome.sty fonts/*
+	xelatex $(COV_LETTER_FR).tex
 
 $(COV_LETTER_FR).png: $(COV_LETTER_FR).pdf
 	convert -density 200 -background white -alpha remove $(COV_LETTER_FR).pdf $(COV_LETTER_FR).png
